@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Header from './Header';
 
 import './App.scss';
@@ -7,7 +6,7 @@ import './App.scss';
 function App() {
   return (
     <>
-      <Header />
+      <Header name="Xavier" />
       {/* <Bio />
       <Portfolio />
       <Footer /> */}
