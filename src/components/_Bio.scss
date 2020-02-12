@@ -1,0 +1,22 @@
+@import '../style/_variables.scss';
+
+
+#bio {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-areas: "presentation skills";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    #presentation {
+        text-align: center;
+        color: $logoGrey;
+    }
+
+    #skills {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+    }
+}
