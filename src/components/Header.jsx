@@ -1,17 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Nav from './Nav';
+// import PropTypes from 'prop-types';
+// import Nav from './Nav';
 
-import './Header.scss';
+import './_Header.scss';
 
+import logo from '../media/logoWeb_blanc.png';
 // import videoIntro from '../media/IntroLogo_1.mp4';
 
-
-function Header({ name }) {
+// { name }
+function Header() {
   return (
     <header>
-      <Nav />
-      <h1>{name}</h1>
+      <div>
+        <img src={logo} alt="Logo XAintégration" id="logo" />
+        <span><p>Parce que chaque détail compte</p></span>
+      </div>
+
+
+      {/* <Nav /> */}
+      {/* <h1>{name}</h1> */}
       {/* <video autoPlay muted loop>
         <source
           src={videoIntro}
@@ -23,8 +30,8 @@ function Header({ name }) {
   );
 }
 
-Header.propTypes = {
-  name: PropTypes.string.isRequired,
-};
+// Header.propTypes = {
+//   name: PropTypes.string.isRequired,
+// };
 
 export default Header;

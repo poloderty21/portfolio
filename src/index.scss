@@ -1,6 +1,21 @@
-@import 'style/variables.scss';
+/*
+   # Auteur Xavier Alexandre
+   # Description : fichier index.scss
+*/
 
-body {
-  margin: 0;
-  background-color: $grey;
-}
+
+/*# typography*/
+@import "./style/_typography.scss";
+
+/*# variables*/
+@import "./style/_variables.scss";
+
+/*# extends*/
+@import "./style/_extends.scss";
+
+/*# mixins*/
+@import "./style/_mixins.scss";
+
+
+
+
