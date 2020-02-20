@@ -25,8 +25,10 @@
         #imgProjet {
             img {
                 width: 100%;
-                border: 5px solid greenyellow;
-                transform: translateX(-100%);
+                // border: 5px solid greenyellow;
+                // transform: translateX(-100%);
+                
+                transition: ease-in-out;
             }
         }
 
