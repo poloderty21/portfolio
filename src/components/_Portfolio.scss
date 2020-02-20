@@ -1,0 +1,81 @@
+@import '../style/_variables.scss';
+
+
+#portfolio {
+    text-align: center;
+    margin: 0 auto;
+    // padding: 0;
+    h2 {
+
+    }
+
+    h4 {
+
+    }
+    
+    #carroussel {  
+        position: relative;
+        // overflow: hidden;
+        .col-12 {
+            padding: 0;
+        }
+        .row {
+            flex-wrap: nowrap;
+        }
+        #imgProjet {
+            img {
+                width: 100%;
+                border: 5px solid greenyellow;
+                transform: translateX(-100%);
+            }
+        }
+
+        #barreInfo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1em;
+            background-color: rgba($color: $bgGrey, $alpha: .9);
+           
+           
+            #divTitre {
+
+                color: lighten($color: $logoGrey, $amount: 0);
+                text-align: left;
+                h2 {
+    
+                }
+    
+                h3 {
+                    margin-top: 0;
+                }
+            }
+            
+            #divBouton {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                a.button {                
+                    text-decoration: none;
+                    background-color: $logoGreen;
+                    color: $logoGrey;
+                    padding: 1rem;
+                    text-align: center;
+        
+                    .white {
+                        margin-left: .5em;
+                    }
+                }
+            }
+           
+            #divNavigation {
+                
+    
+            }
+        }
+
+        
+    }
+}
