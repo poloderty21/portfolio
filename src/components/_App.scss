@@ -7,5 +7,14 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     color: $logoGrey;
-    background-color: $bgGrey;
+    background-color: $bgWhite;
+    
+    #header, #foot {
+        background-color: $bgGrey;
+
+    }
+
+    #bio, #portfo {
+        background-color: $bgWhite;
+    }
 }

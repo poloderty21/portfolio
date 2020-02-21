@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from 'react';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-
-import './_Portfolio.scss';
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+
 import img from '../media/projet.jpg';
 import img2 from '../media/neon.jpg';
 
+import './_Portfolio.scss';
 
 const projets = [
   {
@@ -39,14 +38,6 @@ const projets = [
 function Portfolio() {
   const [numProj, setNumProj] = useState(0);
 
-  useEffect(() => {
-    // const h1 = document.createElement('h1');
-    // h1.innerHTML = 'SALUUTUTUFJDFJF';
-    // const imgProjet = document.getElementById('imgProjet');
-    // imgProjet.appendChild(h1);
-    const imgPrincipal = document.getElementById('imgPrincipal');
-    imgPrincipal.src = projets[numProj].url;
-  });
 
   const nextImg = (e) => {
     e.preventDefault();
@@ -54,16 +45,11 @@ function Portfolio() {
     setNumProj(numProchainProj);
   };
 
-  // const setCaroussel = () => {
-  //   projets.forEach((projet) => {
-  //     console.log(projet.url);
-  //   });
-  //   return <Col data="123" />;
-  // };
 
+  // const { url, titre } = projets[numProj];
 
   return (
-    <Container as="section" id="portfolio">
+    <Container fluid id="portfolio">
       <Row>
         <Col id="divTitre" xs="12">
           <h2>Mon portfolio</h2>
@@ -72,17 +58,18 @@ function Portfolio() {
       </Row>
       <Row id="carroussel" noGutters>
         <Row id="imgProjet">
-          {/* <Col xs="12">
-            <img id="imgPrincipal" src="" alt="Image introuvable" data-numproj={(numProj - 1) < 0 ? projets.length : numProj - 1} />
-          </Col> */}
-          <Col xs="12">
-            <img id="imgPrincipal" src={img} alt={img} data-numproj={numProj} />
-          </Col>
-          {/* <Col xs="12">
-            <img src={img} alt={img} data-numproj={(numProj + 1) > projets.length ? 0 : numProj + 1} />
-          </Col> */}
+          {projets.map(({ url, titre }, id) => (
+            <Col
+              xs="12"
+              order={id}
+              key={`projet-${titre}`}
+              className={id === numProj ? 'slide-in' : ''}
+              style={{ transform: `translateX(${-100 * (numProj)}%)` }}
+            >
+              <img src={url} alt={titre} />
+            </Col>
+          ))}
         </Row>
-
 
         <Row id="barreInfo">
           <Col id="divTitre" xs="8">
