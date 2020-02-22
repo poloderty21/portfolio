@@ -14,7 +14,7 @@ import './_Portfolio.scss';
 const projets = [
   {
     titre: 'Projet 1',
-    sousTitre: "Le premier projet que j'ai réalisé cette année",
+    sousTitre: "Le premier projet que j'ai réalisé cette année.",
     url: img,
   },
   {
@@ -72,20 +72,19 @@ function Portfolio() {
         </Row>
 
         <Row id="barreInfo">
-          <Col id="divTitre" xs="8">
+          <Col id="divTitre" xs="10" sm="8">
             <h2>{projets[numProj].titre}</h2>
-            <h3>{projets[numProj].sousTitre}</h3>
+            <p>{projets[numProj].sousTitre}</p>
           </Col>
 
-          <Col id="divBouton" xs="2">
+          <Col id="divBouton" xs="2" sm="2">
             <a href="http://" className="button" onClick={nextImg}>
-              Voir
-              {' '}
-              <FontAwesomeIcon icon={faExternalLinkAlt} className="white" />
+              <span className="d-none d-sm-block">Visiter</span>
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="marg" />
             </a>
           </Col>
 
-          <Col id="divNavigation" xs="2">
+          <Col id="divNavigation" sm="2" className="d-none d-sm-block">
             <span>Navigation</span>
           </Col>
         </Row>

@@ -11,11 +11,11 @@ import './_App.scss';
 function App() {
   return (
     <>
-      {/* <Header id="header" name="Xavier" />
+      {/* <Header id="header" name="Xavier" /> */}
       <Bio id="bio" />
-      <Ligne /> */}
+      <Ligne />
       <Portfolio id="portfo" />
-      {/* <Footer id="foot" /> */}
+      <Footer id="foot" />
     </>
   );
 }

@@ -12,6 +12,7 @@
     // grid-template-rows: 1fr;
     // background-color: $bgWhite;
     padding: 2rem 1em;
+    background-color: $bgGrey;
 
     img {
         max-width: 100%;
@@ -21,13 +22,7 @@
     #presentation {
         // text-align: center;
         // color: $logoGrey;
-    }
-
-    #skills {
-        // text-align: right;
-        // display: flex;
-        // flex-direction: column;
-    }
+    }   
 }
 
 

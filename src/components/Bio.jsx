@@ -14,7 +14,7 @@ function Bio() {
     <Jumbotron fluid as="section" id="bio" className="text-center">
       <Row>
         <Col id="intro" xs="12">
-          <h2>Découvrez le Xavier d'Amérique!</h2>
+          <h2>Découvrez le Xavier d&apos;Amérique!</h2>
         </Col>
       </Row>
       <Row>
