@@ -3,26 +3,61 @@
 
 #bio {
     width: 100%;
-    height: 100vh;
-    // margin: 0 auto;
-    // max-width: 1000px;
-    // display: grid;
-    // grid-template-areas: "presentation skills";
-    // grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr;
-    // background-color: $bgWhite;
-    padding: 2rem 1em;
+    padding: 0;
+    margin: 0;
     background-color: $bgGrey;
+
+    .row {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .col-12 {
+        padding: 0;
+    }  
 
     img {
         max-width: 100%;
         height: 177px;     
+    }   
+
+    #intro {
+        margin-bottom: 2rem;
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;            
+        }
+        p {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
     }
 
+    
+
     #presentation {
-        // text-align: center;
-        // color: $logoGrey;
-    }   
+        img {
+            margin-bottom: 2rem;
+        }
+        h3 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        h6 {
+            font-weight: 400;
+        }
+    }
+
+    #skills {    
+        max-height: 100%;
+
+    }
 }
 
 
@@ -33,22 +68,39 @@ M E D I A  Q U E R I E S
 */
  
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  
+@media (min-width: $layout-breakpoint-s) {  
  
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-    #bio {
+@media (min-width: $layout-breakpoint-m) {  
+    #bio {       
+        
+
         img {
             height: 288px;     
         }
+
+        #intro {
+            margin-bottom: 2rem;
+            h2 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;            
+            }
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+
+            }
+        }    
     }
+   
 }
  
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: $layout-breakpoint-l) { 
     #bio {
+        // height: 100vh;
         img {
             height: 384px;     
         }
@@ -57,7 +109,7 @@ M E D I A  Q U E R I E S
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: $layout-breakpoint-xl) {
   
    
 }

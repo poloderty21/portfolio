@@ -1,5 +1,140 @@
-#skills {
-  
+@import '../style/_variables.scss';
+@import '../style/_extends.scss';
+
+#skill-tree {
+    justify-content: space-between;
+    
+    
+    .skill {
+        position: relative;
+        // border: 1px solid white;
+        @extend .totalCenter;
+        margin: 1rem 0;
+        padding: 0;
+
+        .skill-title {
+            transition: ease-in-out 200ms; 
+
+            @extend .totalCenter;
+            flex: 0 0 50%;
+            flex-direction: column;
+            
+        }
+
+        .skill-div-logo {
+            @extend .totalCenter;
+            flex: 0 0 50%;
+            flex-direction: row;
+            
+
+            .skill-logo {
+                @extend .totalCenter;
+                transition: ease-in-out 200ms; 
+                width: 50px;
+                height: 50px;
+                background-color: $logoGreen;
+                border-radius: 50%;
+             
+    
+                img {
+                    height: 70%;
+                    width: 70%;
+                    // margin: 10% 0;
+    
+                }
+            }
+        }
+        
+        .ligne-centre {
+            transition: ease-in-out 200ms; 
+            position: absolute;
+            // top: 10%;
+            left: 50%;
+            background-color: $logoGreen;
+            height: 50px;
+            width: 2px;
+            border-radius: 30%;
+
+        }
+    }
+
+    .skill:hover {
+
+        .skill-title {         
+            // flex: 0 0 30%;       
+        }
+        .skill-div-logo {
+            // flex: 0 0 70%;
+            .skill-logo {
+                width: 100px;
+                height: 100px;
+                // background-color: coral;
+            }
+        }
+        .ligne-centre {   
+            top: 10%;
+            // left: 30%;
+            height: 80%;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    // display: flex;
+    // position: relative;
+    
+    // justify-content: space-around;
+   
+    // .skill-titles {
+    //     display: flex;
+    //     flex-direction: column;
+    //     text-align: right;
+
+    //     span.skill-title {
+    //         height: 50px;
+    //         padding: .2rem 0;
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;            
+    //     }
+    // }
+
+    // div.skill-icon {
+    //     div.span-logo {
+    //         width: 50px;
+    //         height: 50px;
+    //         background-color: $logoGreen;
+    //         border-radius: 50%;
+    //         img {
+    //             height: 80%;
+    //             width: 80%;
+    //             margin: 10% 0;
+
+    //         }
+    //     }
+    // }
+
+    // div.ligne-centre {
+    //     position: absolute;
+    //     left: 50%;
+    //     background-color: $logoGreen;
+    //     height: 100%;
+    //     width: 2px;
+    //     border-radius: 30%;
+    //     margin: 0 auto;
+    // }
+
+
+
+
+
 }
 
 
@@ -12,23 +147,23 @@ M E D I A  Q U E R I E S
 */
  
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  
+@media (min-width: $layout-breakpoint-s) {  
  
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
+@media (min-width: $layout-breakpoint-m) {  
   
 }
  
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: $layout-breakpoint-l) { 
   
     
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: $layout-breakpoint-xl) {
   
    
 }

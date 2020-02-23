@@ -6,10 +6,9 @@
     margin: 0 auto;
     width: 100%;
     padding: 0;  
-    margin-bottom: 3rem;
     #divTitre {
         h2, h4 {
-            color: #333333;
+            // color: lighten($color: $logoGrey, $amount: 10);
             font-weight: 700;
         }
 
@@ -56,17 +55,13 @@
         #barreInfo {
             width: 100%;
             padding: .5rem .5rem;      
-            background-color: rgba($color: $bgGrey, $alpha: .9);           
+            background-color: rgba($color: lighten($color: $bgGrey, $amount: 10), $alpha: .9);           
            
             #divTitre {
-                color: lighten($color: $logoGrey, $amount: 15);
+                // color: lighten($color: $logoGrey, $amount: 10);
                 text-align: left;
                 padding: 0;
                 padding-right: 7px;
-
-                h2, p {
-                    color: lighten($color: $logoGrey, $amount: 15);                    
-                }
 
                 h2 {
                     font-size: 1.2rem;
@@ -93,10 +88,9 @@
                     align-items: center;
                     margin-left: auto;
                     border-radius: 10px;
-                    text-decoration: none;
                     background-color: $logoGreen;
                     padding: .6rem;
-                    color: lighten($color: $logoGrey, $amount: 15);                    
+                    color: $logoGrey;                    
                     width: 40px;
 
                     p {
@@ -142,7 +136,7 @@ M E D I A  Q U E R I E S
 */
  
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (min-width: $layout-breakpoint-s) {
     #portfolio {
         #carroussel {
             #barreInfo { 
@@ -165,7 +159,7 @@ M E D I A  Q U E R I E S
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
+@media (min-width: $layout-breakpoint-m) {  
     #portfolio {        
         #divTitre {
             h2{
@@ -178,23 +172,17 @@ M E D I A  Q U E R I E S
         }
 
         #carroussel {
-            #barreInfo {
-                     
-                padding: .5rem 1rem;      
-                background-color: rgba($color: $bgGrey, $alpha: .9);           
-               
-                #divTitre {
-    
+            #barreInfo {                     
+                padding: .5rem 1rem;
+                #divTitre {    
                     h2 {
                         font-size: 2rem;
-                    }
-                 
+                    }                 
                     p {
                         font-size: 1.2rem;
                         margin: 0;
                     }
-                }
-                
+                }                
                 #divBouton {
                     a.button {
                         padding: 1rem;
@@ -206,12 +194,12 @@ M E D I A  Q U E R I E S
 }
  
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: $layout-breakpoint-l) { 
  
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: $layout-breakpoint-xl) {
     .container-fluid {
         max-width: 1140px;
     }

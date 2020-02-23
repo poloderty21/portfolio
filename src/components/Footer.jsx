@@ -13,7 +13,7 @@ function Footer() {
       <Container id="footer">
         <Row>
           <Col xs="12">
-            <h1>Footer</h1>
+            {/* <h1>Footer</h1> */}
             <p className="copyright">&copy; 2020 Xavier Alexandre</p>
             <p className="petitMot">Fait avec ♥ à MTL</p>
           </Col>

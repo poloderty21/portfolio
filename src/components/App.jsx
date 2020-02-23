@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Header from './Header';
 import Bio from './Bio';
 import Ligne from './Ligne';
@@ -11,11 +12,11 @@ import './_App.scss';
 function App() {
   return (
     <>
-      {/* <Header id="header" name="Xavier" /> */}
-      <Bio id="bio" />
+      <Header name="Xavier" />
+      <Bio />
       <Ligne />
-      <Portfolio id="portfo" />
-      <Footer id="foot" />
+      <Portfolio />
+      <Footer />
     </>
   );
 }

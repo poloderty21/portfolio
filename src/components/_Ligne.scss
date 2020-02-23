@@ -2,9 +2,22 @@
 
 #ligne{
     background-color: $logoGreen;
-    margin: 3rem auto;
+    margin: 0 auto;
     width: 80%;
     height: 1px;
     border-radius: 30%;
     max-width: 1040px;
+}
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: $layout-breakpoint-xl) {
+  
+   
 }

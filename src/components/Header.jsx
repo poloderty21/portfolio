@@ -1,7 +1,6 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 // import Nav from './Nav';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 
 
 import './_Header.scss';
@@ -12,7 +11,7 @@ import logo from '../media/logoWeb_blanc.png';
 // { name }
 function Header() {
   return (
-    <Jumbotron fluid as="header">
+    <header>
       <div>
         <img src={logo} alt="Logo XAintégration" id="logo" />
         <span><p>Parce que chaque détail compte</p></span>
@@ -28,7 +27,7 @@ function Header() {
         />
                 Désolé, votre fureteur ne supporte pas ce format vidéo.
       </video> */}
-    </Jumbotron>
+    </header>
   );
 }
 
