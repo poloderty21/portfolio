@@ -16,9 +16,11 @@
     }  
 
     img {
-        max-width: 100%;
-        height: 177px;     
+        max-width: 90%;
+        // height: 177px;     
     }   
+
+   
 
     #intro {
         margin-bottom: 2rem;
@@ -38,6 +40,7 @@
     
 
     #presentation {
+        margin-bottom: 5rem;
         img {
             margin-bottom: 2rem;
         }
@@ -56,7 +59,25 @@
 
     #skills {    
         max-height: 100%;
-
+        // height: 100vh;
+        h3, h4, h6 {
+            width: 100%;    
+            margin-bottom: .5rem;
+        }
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2rem; 
+        }
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        h6 {
+            font-style: italic;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
     }
 }
 
@@ -78,7 +99,7 @@ M E D I A  Q U E R I E S
         
 
         img {
-            height: 288px;     
+            // height: 288px;
         }
 
         #intro {
@@ -100,9 +121,9 @@ M E D I A  Q U E R I E S
 /* Large devices (desktops, 992px and up) */
 @media (min-width: $layout-breakpoint-l) { 
     #bio {
-        // height: 100vh;
+     
         img {
-            height: 384px;     
+            // height: 384px;     
         }
     }
     

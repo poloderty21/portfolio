@@ -14,30 +14,28 @@ function Bio() {
   return (
     <section id="bio" className="text-center">
       <Row>
-        <Col id="intro" xs="12">
+        <Col id="intro">
           <h2>Découvrez le Xavier d&apos;Amérique!</h2>
           <p>Une créature appréciée de tous</p>
         </Col>
       </Row>
-      <Row className="maxWidth maxHeight">
-        <Col id="presentation" xs="12" lg="6">
+      <Row id="presentation" className="maxWidth">
+        <Col>
           <Image fluid src={barbueVert} alt="Barbue sur rond au fond vert" />
           <h3>Xavier Alexandre</h3>
           <h4>Intégrateur Web / Développeur Front End</h4>
           <h6>(et magnifique personne)</h6>
         </Col>
-        <Col id="skills" xs="12" lg="6">
-          <Row>
-            <h3 className="mx-auto">Capacitiés</h3>
-          </Row>
-          <Skills />
-          <Row>
-            <h4 className="mx-auto">Il est habile dans tous ces domaines!</h4>
-          </Row>
+      </Row>
+      <Row id="skills" className="maxWidth">
+        <Col>
+          <h3 className="">Capacitiés</h3>
+          <h4 className="">Il est habile dans tous ces domaines, certains plus que d&apos;autres :</h4>
+          <h6>Observez les contours</h6>
         </Col>
+        <Skills />
       </Row>
     </section>
-
   );
 }
 

@@ -1,145 +1,119 @@
 @import '../style/_variables.scss';
 @import '../style/_extends.scss';
 
+
+
+//Relatif au skill
+$pourcentageOccupationXs: 30%;
+
+// Relatif au cercle contenant le logo
+$pourcentageLogo: 70%;
+
+$grosseurCercleXs: 70px;
+$grosseurCercleHoverXs: calc(#{$grosseurCercleXs} + 20px);
+
+$grosseurCercleM: 100px;
+$grosseurCercleHoverM: calc(#{$grosseurCercleM} + 20px);
+
+$grosseurCercleXl: 120px;
+$grosseurCercleHoverXl: calc(#{$grosseurCercleXl} + 20px);
+
+
+
+
+//Relafit au cercle pourcentage
+$grosseurPourcentXs: calc(#{$grosseurCercleXs} + 10px);
+$grosseurPourcentHoverXs: calc(#{$grosseurCercleHoverXs} + 25px);
+
+$grosseurPourcentM: calc(#{$grosseurCercleM} + 10px);
+$grosseurPourcentHoverM: calc(#{$grosseurCercleHoverM} + 25px);
+
+$grosseurPourcentXl: calc(#{$grosseurCercleXl} + 10px);
+$grosseurPourcentHoverXl: calc(#{$grosseurCercleHoverXl} + 25px);
+
+
+
 #skill-tree {
-    justify-content: space-between;
-    
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+
+    #skill-lang, #skill-util, #skill-logiciel {
+        display: flex;      
+        flex: 1 0 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+
     .skill {
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 $pourcentageOccupationXs;
+        padding: 0;       
         // border: 1px solid white;
-        @extend .totalCenter;
-        margin: 1rem 0;
-        padding: 0;
+        // margin-bottom: 1rem;
 
-        .skill-title {
-            transition: ease-in-out 200ms; 
-
+        .skill-container {
             @extend .totalCenter;
-            flex: 0 0 50%;
-            flex-direction: column;
-            
-        }
-
-        .skill-div-logo {
-            @extend .totalCenter;
-            flex: 0 0 50%;
-            flex-direction: row;
-            
-
-            .skill-logo {
+            // height: $grosseurPourcentHoverXs;
+            .skill-pourcent {
                 @extend .totalCenter;
-                transition: ease-in-out 200ms; 
-                width: 50px;
-                height: 50px;
+                width: $grosseurPourcentXs;
+                height: $grosseurPourcentXs;
                 background-color: $logoGreen;
                 border-radius: 50%;
-             
-    
-                img {
-                    height: 70%;
-                    width: 70%;
-                    // margin: 10% 0;
-    
+                background-color:  darken($logoGreen, 8);
+                transition: ease-in-out 400ms;
+
+                .skill-logo {
+                    @extend .totalCenter;
+                    width: $grosseurCercleXs;
+                    height: $grosseurCercleXs;
+                    background-color: $logoGreen;
+                    border-radius: 50%;
+                    transition: ease-in-out 400ms;
+
+                    img {
+                        height: $pourcentageLogo;
+                        width: $pourcentageLogo;
+                    }                   
                 }
             }
         }
-        
-        .ligne-centre {
-            transition: ease-in-out 200ms; 
-            position: absolute;
-            // top: 10%;
-            left: 50%;
-            background-color: $logoGreen;
-            height: 50px;
-            width: 2px;
-            border-radius: 30%;
 
+        .skill-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: .9rem;
+            // margin-top: 1rem;
+            opacity: 0;
+            transition: ease-in-out 400ms;
         }
     }
 
-    .skill:hover {
 
-        .skill-title {         
-            // flex: 0 0 30%;       
-        }
-        .skill-div-logo {
-            // flex: 0 0 70%;
-            .skill-logo {
-                width: 100px;
-                height: 100px;
-                // background-color: coral;
+    .skill:hover{    
+        margin-bottom: 1rem;
+        .skill-container {
+            .skill-pourcent {
+                width: $grosseurPourcentHoverXs;
+                height: $grosseurPourcentHoverXs;
+                .skill-logo {               
+                    width: $grosseurCercleHoverXs;
+                    height: $grosseurCercleHoverXs;                   
+                }
             }
         }
-        .ligne-centre {   
-            top: 10%;
-            // left: 30%;
-            height: 80%;
+        .skill-title {
+            opacity: 1;
+            margin-top: 1rem;
         }
     }
-
-
-
-
-
-
-
-
-
-
-    // display: flex;
-    // position: relative;
-    
-    // justify-content: space-around;
-   
-    // .skill-titles {
-    //     display: flex;
-    //     flex-direction: column;
-    //     text-align: right;
-
-    //     span.skill-title {
-    //         height: 50px;
-    //         padding: .2rem 0;
-    //         display: flex;
-    //         flex-direction: column;
-    //         justify-content: center;            
-    //     }
-    // }
-
-    // div.skill-icon {
-    //     div.span-logo {
-    //         width: 50px;
-    //         height: 50px;
-    //         background-color: $logoGreen;
-    //         border-radius: 50%;
-    //         img {
-    //             height: 80%;
-    //             width: 80%;
-    //             margin: 10% 0;
-
-    //         }
-    //     }
-    // }
-
-    // div.ligne-centre {
-    //     position: absolute;
-    //     left: 50%;
-    //     background-color: $logoGreen;
-    //     height: 100%;
-    //     width: 2px;
-    //     border-radius: 30%;
-    //     margin: 0 auto;
-    // }
-
-
-
-
-
 }
-
-
-
-
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -148,22 +122,84 @@ M E D I A  Q U E R I E S
  
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: $layout-breakpoint-s) {  
- 
+    
 }
  
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: $layout-breakpoint-m) {  
-  
+    #skill-tree {
+        .skill {       
+            flex: 0 1 calc(#{$pourcentageOccupationXs} - 12%);
+            margin-bottom: 1rem;
+
+            .skill-container {    
+                height: $grosseurPourcentHoverM;
+                .skill-pourcent {
+                    width: $grosseurPourcentM;
+                    height: $grosseurPourcentM;
+                    .skill-logo {               
+                        width: $grosseurCercleM;
+                        height: $grosseurCercleM;
+                    }
+                }
+            }
+            .skill-title {
+                font-size: 1.2rem;
+                margin-top: 1rem;
+            }
+        }
+        .skill:hover {       
+            .skill-container {  
+                .skill-pourcent {
+                    width: $grosseurPourcentHoverM;
+                    height: $grosseurPourcentHoverM;
+                    .skill-logo {               
+                        width: $grosseurCercleHoverM;
+                        height: $grosseurCercleHoverM;                   
+                    }
+                }   
+            }    
+        }
+    }
 }
  
-/* Large devices (desktops, 992px and up) */
+/* Large devices (desktops, 1024px and up) */
 @media (min-width: $layout-breakpoint-l) { 
-  
+    #skill-tree {
+        .skill {       
+            flex: 0 1 calc(#{$pourcentageOccupationXs} - 10%);
+            .skill-container {    
+                height: $grosseurPourcentHoverXl;
+                .skill-pourcent {
+                    width: $grosseurPourcentXl;
+                    height: $grosseurPourcentXl;
+                    .skill-logo {               
+                        width: $grosseurCercleXl;
+                        height: $grosseurCercleXl;
+                    }
+                }
+            }
+            .skill-title {
+                font-size: 1.5rem;
+            }
+        }
+        .skill:hover {       
+            .skill-container {  
+                .skill-pourcent {
+                    width: $grosseurPourcentHoverXl;
+                    height: $grosseurPourcentHoverXl;
+                    .skill-logo {               
+                        width: $grosseurCercleHoverXl;
+                        height: $grosseurCercleHoverXl;                   
+                    }
+                }   
+            }    
+        }
+    }   
     
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: $layout-breakpoint-xl) {
-  
-   
+    
 }
