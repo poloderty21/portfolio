@@ -1,5 +1,6 @@
 {
   "name": "portfolio-app",
+  "homepage": "https://e1264136.webdev.cmaisonneuve.qc.ca/portfolio/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
