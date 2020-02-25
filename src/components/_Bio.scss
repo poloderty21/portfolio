@@ -99,40 +99,42 @@ M E D I A  Q U E R I E S
  
 }
  
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: $layout-breakpoint-m) {  
-    #bio {       
-        
-
-        // img {
-        //     // height: 288px;
-        // }
-
+    #bio {
+        #presentation{
+            img {
+                height: 384px;
+                margin-bottom: 3rem;
+            }
+        }
         #intro {
             margin-bottom: 2rem;
             h2 {
                 font-size: 2.5rem;
-                margin-bottom: 1rem;            
+                margin-bottom: 1rem;          
             }
             p {
                 font-size: 1.5rem;
-                margin-bottom: 1rem;
-
+                margin-bottom: 3rem;
             }
         }    
+        #skills {
+            h3 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;          
+            }
+            h4 {
+                font-size: 1.5rem;
+            }
+        }
     }
    
 }
  
 /* Large devices (desktops, 1024px and up) */
 @media (min-width: $layout-breakpoint-l) { 
-    #bio {
-     
-        img {
-            height: 384px;
-        }
-    }
-    
+  
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
