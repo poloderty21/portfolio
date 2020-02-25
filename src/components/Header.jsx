@@ -1,38 +1,29 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-// import Nav from './Nav';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithubSquare, faFacebookSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import './_Header.scss';
 
 import logo from '../media/logoWeb_blanc.png';
-// import videoIntro from '../media/IntroLogo_1.mp4';
 
-// { name }
 function Header() {
   return (
-    <header>
-      <div>
-        <img src={logo} alt="Logo XAintégration" id="logo" />
-        <span><p>Parce que chaque détail compte</p></span>
+    <header className="">
+      <div id="divBtn">
+        <input type="button" value="Contact" />
       </div>
-
-
-      {/* <Nav /> */}
-      {/* <h1>{name}</h1> */}
-      {/* <video autoPlay muted loop>
-        <source
-          src={videoIntro}
-          type="video/mp4"
-        />
-                Désolé, votre fureteur ne supporte pas ce format vidéo.
-      </video> */}
+      <div className="">
+        <img src={logo} alt="Logo XAintégration" id="logo" className="slide-in-blurred-top" />
+        <span><p className="slide">Parce que chaque détail compte</p></span>
+      </div>
+      <div id="divReseau">
+        <a href="#facebook" aria-label="Facebook"><FontAwesomeIcon icon={faFacebookSquare} /></a>
+        <a href="#linkedin" aria-label="LinkedIn"><FontAwesomeIcon icon={faLinkedin} /></a>
+        <a href="github" aria-label="Github"><FontAwesomeIcon icon={faGithubSquare} /></a>
+      </div>
     </header>
   );
 }
-
-// Header.propTypes = {
-//   name: PropTypes.string.isRequired,
-// };
 
 export default Header;

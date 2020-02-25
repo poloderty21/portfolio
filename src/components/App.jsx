@@ -14,8 +14,8 @@ function App() {
     <>
       <Header name="Xavier" />
       <Bio />
-      <Ligne />
       <Portfolio />
+      <Ligne />
       <Footer />
     </>
   );

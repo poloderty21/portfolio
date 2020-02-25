@@ -20,7 +20,10 @@
         // height: 177px;     
     }   
 
-   
+    #containerBio {
+        margin: 0 auto;
+        height: 100vh;
+    }
 
     #intro {
         margin-bottom: 2rem;
@@ -40,9 +43,11 @@
     
 
     #presentation {
+        margin: 0 auto;
         margin-bottom: 5rem;
         img {
             margin-bottom: 2rem;
+            height: 200px;
         }
         h3 {
             font-size: 2rem;
@@ -58,6 +63,7 @@
     }
 
     #skills {    
+        padding-top: 3rem;
         max-height: 100%;
         // height: 100vh;
         h3, h4, h6 {
@@ -70,7 +76,7 @@
             font-size: 2rem; 
         }
         h4 {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-weight: 400;
         }
         h6 {
@@ -98,9 +104,9 @@ M E D I A  Q U E R I E S
     #bio {       
         
 
-        img {
-            // height: 288px;
-        }
+        // img {
+        //     // height: 288px;
+        // }
 
         #intro {
             margin-bottom: 2rem;
@@ -118,12 +124,12 @@ M E D I A  Q U E R I E S
    
 }
  
-/* Large devices (desktops, 992px and up) */
+/* Large devices (desktops, 1024px and up) */
 @media (min-width: $layout-breakpoint-l) { 
     #bio {
      
         img {
-            // height: 384px;     
+            height: 384px;
         }
     }
     

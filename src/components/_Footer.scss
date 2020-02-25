@@ -22,8 +22,16 @@ footer {
     }
 
     .copyright {
-        margin-bottom: 0;
+        margin-bottom: .5rem;
     }
+    #divReseau {     
+        margin-bottom: .5rem;
+        a {
+            font-size: 2rem;
+            padding: 0 .5rem;
+            color: $logoGrey;
+        }
+    }    
 }
 
 
