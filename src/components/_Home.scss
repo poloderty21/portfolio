@@ -1,0 +1,48 @@
+@import '../style/_variables.scss';
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: $logoGrey;
+    background-color: $bgGrey;
+}
+
+#header, #bio, #portfolio, #footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#bio {
+    padding-top: 3rem;
+}
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: $layout-breakpoint-s) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: $layout-breakpoint-m) {  
+   
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: $layout-breakpoint-l) { 
+    #header, #bio, #portfolio, #footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: $layout-breakpoint-xl) {
+     
+}
