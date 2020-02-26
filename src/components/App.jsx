@@ -1,23 +1,32 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+} from 'react-router-dom';
 
-import Header from './Header';
-import Bio from './Bio';
-import Ligne from './Ligne';
-import Portfolio from './Portfolio';
-import Footer from './Footer';
-
-
-import './_App.scss';
+import Home from './Home';
 
 function App() {
   return (
-    <>
-      <Header name="Xavier" />
-      <Bio />
-      <Portfolio />
-      <Ligne />
-      <Footer />
-    </>
+    <Router>
+      {/* <Link to="/users">Users</Link> */}
+      <Switch>
+        <Route path="/users">
+          <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, assumenda amet. Officia adipisci,
+soluta laudantium aperiam
+            <Link to="/">Home</Link>
+            {' '}
+cumque animi possimus ut pariatur officiis sint veritatis? Minima, incidunt assumenda. Culpa, ut.
+          </p>
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
