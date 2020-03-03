@@ -27,7 +27,7 @@ function Bio() {
       </div>
       <Row id="skills" className="maxWidth">
         <Col>
-          <h3 className="">Capacitiés</h3>
+          <h3 className="">Compétences</h3>
           <h4 className="">Il est habile dans tous ces domaines, certains plus que d&apos;autres :</h4>
           <h6>(Observez les contours)</h6>
         </Col>

@@ -17,9 +17,9 @@ function Footer() {
         <Row>
           <Col xs="12">
             <div id="divReseau">
-              <a href="github" aria-label="Github"><FontAwesomeIcon icon={faGithubSquare} /></a>
-              <a href="#facebook" aria-label="Facebook"><FontAwesomeIcon icon={faFacebookSquare} /></a>
-              <a href="#linkedin" aria-label="LinkedIn"><FontAwesomeIcon icon={faLinkedin} /></a>
+              <a href="https://www.facebook.com/xavier.alexandre.1994" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} /></a>
+              <a href="https://www.linkedin.com/in/xavier-alexandre-a735441a3/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+              <a href="https://github.com/poloderty21" aria-label="Github" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithubSquare} /></a>
             </div>
             <p className="copyright">&copy; 2020 Xavier Alexandre</p>
             <p className="petitMot">Fait avec ♥ à MTL</p>

@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
+  // Link,
 } from 'react-router-dom';
 
 import Home from './Home';
@@ -13,7 +13,7 @@ function App() {
     <Router>
       {/* <Link to="/users">Users</Link> */}
       <Switch>
-        <Route path="/users">
+        {/* <Route path="/users">
           <p>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, assumenda amet. Officia adipisci,
 soluta laudantium aperiam
@@ -21,7 +21,7 @@ soluta laudantium aperiam
             {' '}
 cumque animi possimus ut pariatur officiis sint veritatis? Minima, incidunt assumenda. Culpa, ut.
           </p>
-        </Route>
+        </Route> */}
         <Route path="/">
           <Home />
         </Route>

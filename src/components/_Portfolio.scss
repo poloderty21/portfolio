@@ -18,6 +18,9 @@
             font-size: 1.1rem;
             font-weight: 400;
         }
+        p {
+            font-style: italic;
+        }
     }  
 
     .row {
@@ -31,8 +34,37 @@
     #carroussel {  
         margin-top: 2rem;
         position: relative;
+
+        #divNavNext {         
+            left: 50%;
+            justify-content: flex-end;
+        }
+
+        .btnNavSlider:hover {
+            transition: opacity 400ms;
+            opacity: .5;        
+        }
+
+        .btnNavSlider {
+            padding: 1rem;
+            opacity: .1;
+            position: absolute;
+            z-index: 5;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            font-size: 3rem;
+            color: $logoGreen;
+
+            .fleche {
+                margin-top: 15%;
+                font-size: 2rem;
+            }
+        }
         
         #imgProjet {
+            position: relative;
             overflow: hidden;
             flex-wrap: nowrap;
             max-width: 100%;
@@ -55,6 +87,7 @@
             width: 100%;
             padding: .5rem .5rem;      
             background-color: rgba($color: lighten($color: $bgGrey, $amount: 10), $alpha: .9);           
+            z-index: 10;
            
             #divTitre {
                 // color: lighten($color: $logoGrey, $amount: 10);
@@ -64,9 +97,11 @@
 
                 h2 {
                     font-size: 1.2rem;
+                    margin-bottom: 0;
                 }
              
                 p {
+                    font-style: normal;
                     font-size: .8rem;
                     margin: 0;
                 }
@@ -79,10 +114,11 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
 
                 a.button {    
                     @extend .totalCenter;
-                    margin-left: auto;
+                    // margin-left: auto;
                     border-radius: 5px;
                     background-color: $logoGreen;
                     padding: .6rem;
@@ -169,6 +205,15 @@ M E D I A  Q U E R I E S
         }
 
         #carroussel {
+            .btnNavSlider {
+                padding: 2rem;
+
+                .fleche {
+                    margin-top: 0%;
+                    margin-bottom: 5%;
+                    font-size: 3rem;
+                }
+            }
             #barreInfo {                     
                 padding: .5rem 1rem;
                 #divTitre {    
@@ -193,7 +238,17 @@ M E D I A  Q U E R I E S
  
 /* Large devices (desktops, 992px and up) */
 @media (min-width: $layout-breakpoint-l) { 
- 
+    #portfolio {
+        #carroussel {
+            .btnNavSlider {
+
+                .fleche {
+                    margin-bottom: 0%;
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
