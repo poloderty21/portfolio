@@ -14,14 +14,28 @@
         padding: 0;
     }  
 
+    #div-chapeau {
+        position: relative;
+        margin: 0 auto;
+        width: 500px;
+        height: 500px;
+        .chapeau {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+
     img {
-        max-width: 90%;
+        // max-width: 90%;
         // height: 177px;     
     }   
 
     #containerBio {
         margin: 0 auto;
         height: 100vh;
+        padding: 2rem 0;
     }
 
     #intro {
@@ -103,7 +117,7 @@ M E D I A  Q U E R I E S
     #bio {
         #presentation{
             img {
-                height: 384px;
+                height: 500px;
                 margin-bottom: 3rem;
             }
         }

@@ -5,7 +5,9 @@ import Col from 'react-bootstrap/Col';
 import Skills from './Skills';
 
 
-import barbueVert from '../media/Barbue-vert.png';
+import barbueVert from '../media/Barbue-vert-chapeau.png';
+import fedora from '../media/chapeau/chapeau-fedora.png';
+import cigar from '../media/chapeau/chapeau-cigar.png';
 
 import './_Bio.scss';
 
@@ -19,7 +21,11 @@ function Bio() {
           <p>Une créature appréciée de tous</p>
         </div>
         <div id="presentation">
-          <Image fluid src={barbueVert} alt="Barbue sur rond au fond vert" />
+          <div id="div-chapeau">
+            <img src={barbueVert} alt="Barbue sur rond au fond vert" />
+            {/* <img src={fedora} alt="fedora" className="chapeau" />
+            <img src={cigar} alt="cigar" className="chapeau" /> */}
+          </div>
           <h3>Xavier Alexandre</h3>
           <h4>Intégrateur Web / Développeur Front End</h4>
           <h6>(et magnifique personne)</h6>

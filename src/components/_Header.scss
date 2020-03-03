@@ -4,6 +4,7 @@
 
 header {
     // background-color: $bgGrey;
+    overflow-x: hidden;
     width: 100%;
     height: 100vh;
     min-height: 300px;
@@ -34,6 +35,10 @@ header {
             font-size: 1rem;
             background-color: $logoGrey;
             border-radius: 10%;
+            transition: background-color .4s;
+        }
+        span:hover {
+            background-color: $logoGreen;
         }
     }
 
@@ -68,11 +73,19 @@ header {
 }
 
 .slide-in-blurred-top {
-	animation: slide-in-blurred-top .6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	animation: slide-in-blurred-top .8s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 .slide {
-	animation: slide .6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.tilt-in-top-1 {
+	animation: tilt-in-top-1 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.tilt-in-top-2 {
+	animation: tilt-in-top-2 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /* ----------------------------------------------
@@ -104,7 +117,7 @@ header {
 
 /**
  * ----------------------------------------
- * animation slide-in-fwd-right
+ * animation slide
  * ----------------------------------------
  */
  @keyframes slide {
@@ -121,6 +134,38 @@ header {
         opacity: 1;
       }
 }
+
+/**
+ * ----------------------------------------
+ * animation tilt-in-top-1
+ * ----------------------------------------
+ */
+ @keyframes tilt-in-top-1 {
+    0% {
+      transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+
+  /**
+ * ----------------------------------------
+ * animation tilt-in-top-2
+ * ----------------------------------------
+ */
+@keyframes tilt-in-top-2 {
+    0% {
+      transform: rotateY(-30deg) translateY(-300px) skewY(30deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
 
 
 
