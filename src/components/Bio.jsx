@@ -7,6 +7,7 @@ import Skills from './Skills';
 import barbueVert from '../media/Barbue-vert-chapeau.png';
 import fedora from '../media/chapeau/chapeau-fedora.png';
 import cigar from '../media/chapeau/chapeau-cigar.png';
+import incognito from '../media/chapeau/chapeau-incognito.png';
 
 import './_Bio.scss';
 
@@ -22,8 +23,9 @@ function Bio() {
         <div id="presentation">
           <div id="div-chapeau">
             <img src={barbueVert} alt="Barbue sur rond au fond vert" />
-            {/* <img src={fedora} alt="fedora" className="chapeau" />
-            <img src={cigar} alt="cigar" className="chapeau" /> */}
+            <img src={fedora} alt="fedora" className="chapeau" />
+            <img src={cigar} alt="cigar" className="chapeau" />
+            <img src={incognito} alt="incognito" className="chapeau" />
           </div>
           <h3>Xavier Alexandre</h3>
           <h4>Intégrateur Web / Développeur Front End</h4>

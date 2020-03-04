@@ -41,11 +41,11 @@
         }
 
         .btnNavSlider:hover {
-            transition: opacity 400s;
             opacity: .5;        
         }
 
         .btnNavSlider {
+            transition: opacity 800s;
             padding: 1rem;
             opacity: .1;
             position: absolute;
