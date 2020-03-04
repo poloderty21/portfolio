@@ -36,6 +36,10 @@ header {
             background-color: $logoGrey;
             border-radius: 10%;
             transition: background-color .4s;
+
+            svg {
+                width: 30px;
+            }
         }
         span:hover {
             background-color: $logoGreen;

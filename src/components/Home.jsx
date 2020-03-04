@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
 
 import Header from './Header';
@@ -12,11 +12,10 @@ import './_Home.scss';
 
 function Home() {
   const [isRaining, setIsRaining] = useState(true);
-
   return (
     <>
-      <Header onWeatherChange={() => setIsRaining(!isRaining)} isRaining />
-      <Rainy isRaining />
+      <Header onWeatherChange={() => setIsRaining(!isRaining)} isRaining={isRaining} />
+      <Rainy isRaining={isRaining} />
       {/* <Link to="/users">Home</Link> */}
       <Bio />
       <Portfolio />

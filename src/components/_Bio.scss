@@ -17,15 +17,14 @@
     #div-chapeau {
         position: relative;
         margin: 0 auto;
-        width: 500px;
-        height: 500px;
+        width: 200px;
+        height: 200px;
         .chapeau {
             position: absolute;
             top: 0;
             left: 0;
         }
     }
-
 
     img {
         // max-width: 90%;
@@ -121,6 +120,11 @@ M E D I A  Q U E R I E S
                 margin-bottom: 3rem;
             }
         }
+        #div-chapeau {     
+            width: 500px;
+            height: 500px;          
+        }
+    
         #intro {
             margin-bottom: 2rem;
             h2 {
