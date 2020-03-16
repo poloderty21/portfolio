@@ -14,9 +14,9 @@ import logo from '../media/logoWeb_blanc.png';
 
 function Header({ onWeatherChange, isRaining }) {
   return (
-    <header className="">
+    <header id="header">
       <div id="divBtn" className="tilt-in-top-2">
-        <span type="button" aria-label="Rainy" onClick={onWeatherChange}>{isRaining === true ? <FontAwesomeIcon icon={faCloudSunRain} /> : <FontAwesomeIcon icon={faCloudSun} />}</span>
+        <span type="button" role="button" tabIndex={0} aria-label="Rainy" onClick={onWeatherChange}>{isRaining === true ? <FontAwesomeIcon icon={faCloudSunRain} /> : <FontAwesomeIcon icon={faCloudSun} />}</span>
         <input type="button" value="Contact" />
       </div>
       <div className="">

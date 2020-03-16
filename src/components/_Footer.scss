@@ -1,8 +1,6 @@
 @import '../style/_variables.scss';
+@import '../style/_extends.scss';
 
-footer { 
-    // background-color: $bgGrey;
-}
 
 #footer {
     text-align: center;
@@ -25,11 +23,40 @@ footer {
         margin-bottom: .5rem;
     }
     #divReseau {     
+        @extend .totalCenter;        
         margin-bottom: .5rem;
         a {
             font-size: 2rem;
             padding: 0 .5rem;
             color: $logoGrey;
+        }
+    }
+
+    #btnFold {
+        margin-bottom: .8rem;
+    }
+   
+    span.arrowOpen svg {
+        // margin-bottom: 5px;
+        color: $logoGreen;
+    }    
+    
+    #foldList {
+        display: flex;
+        justify-content: center;
+        ul {
+            padding: .5rem 0;
+            text-align: left;
+            list-style: none;
+            
+            li {
+                display: flex;
+                justify-content: space-between;
+                font-size: .8rem;
+                span {
+                    padding: 0 .5rem;
+                }
+            }
         }
     }    
 }

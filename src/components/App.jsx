@@ -1,29 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  // Link,
+  Link,
 } from 'react-router-dom';
 
 import Home from './Home';
+import Projet from './Projet';
+
+import Projets from '../data/projets';
+
 
 function App() {
+  const [numProj, setNumProj] = useState(0);
+
+  const precImg = (e) => {
+    e.preventDefault();
+    const numProchainProj = (numProj - 1) < 0 ? Projets.length - 1 : numProj - 1;
+    setNumProj(numProchainProj);
+  };
+  const nextImg = (e) => {
+    e.preventDefault();
+    const numProchainProj = (numProj + 1) === Projets.length ? 0 : numProj + 1;
+    setNumProj(numProchainProj);
+  };
+
   return (
     <Router>
-      {/* <Link to="/users">Users</Link> */}
       <Switch>
-        {/* <Route path="/users">
-          <p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, assumenda amet. Officia adipisci,
-soluta laudantium aperiam
-            <Link to="/">Home</Link>
-            {' '}
-cumque animi possimus ut pariatur officiis sint veritatis? Minima, incidunt assumenda. Culpa, ut.
-          </p>
-        </Route> */}
+        <Route path="/projet">
+          <Link to="/">Home</Link>
+          <Projet numProj={numProj} />
+        </Route>
         <Route path="/">
-          <Home />
+          <Home numProj={numProj} precImg={precImg} nextImg={nextImg} />
         </Route>
       </Switch>
     </Router>

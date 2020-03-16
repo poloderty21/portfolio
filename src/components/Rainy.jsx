@@ -23,7 +23,7 @@ function Rainy({ isRaining }) {
         // add in a new raindrop with various randomizations to certain CSS properties
         drop.push(
           <div
-            key={`${randoCent}-${randoCinq}-${Math.floor(Math.random() * (100))}`}
+            key={`${randoCent}-${randoCinq}-${Math.floor(Math.random() * (999))}`}
             className="drop"
             style={{
               left: `${increment}%`, bottom: `${randoCinq + randoCinq - 1 + 100}%`, animationDelay: `0.${randoCent}s`, animationDuration: `0.5${randoCent}s`,
