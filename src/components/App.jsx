@@ -3,14 +3,13 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from 'react-router-dom';
 
 import Home from './Home';
 import Projet from './Projet';
 
 import Projets from '../data/projets';
-
+import ScrollRestoration from './ScrollRestoration';
 
 function App() {
   const [numProj, setNumProj] = useState(0);
@@ -30,11 +29,12 @@ function App() {
     <Router>
       <Switch>
         <Route path="/projet">
-          <Link to="/">Home</Link>
-          <Projet numProj={numProj} />
+          <Projet numProj={numProj} precImg={precImg} nextImg={nextImg} />
+          <ScrollRestoration />
         </Route>
         <Route path="/">
           <Home numProj={numProj} precImg={precImg} nextImg={nextImg} />
+          <ScrollRestoration />
         </Route>
       </Switch>
     </Router>

@@ -1,13 +1,118 @@
+@import '../style/_variables.scss';
 
 
 #PageProjet {
+    position: relative;
 
-    img {
-        max-width: 100%;
+    div:first-child {
+        display: flex;
+        img {
+            user-select: none;
+            margin: 0 auto;
+            max-width: 100%;
+            // max-height: 100vh;
+        }
+    }
+
+    .btnBack {     
+        user-select: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        color: $logoGrey;
+        background-color: $logoGreen;
+        border: 0;
+        border-radius: 5px;
+        padding: .5rem .5rem;  
+        margin: .5rem; 
+        cursor: pointer;
+    }
+
+    .btnBack:hover {
+        color: lighten($color: $logoGrey, $amount: 5);
+    }
+
+    .btnBack.top {
+        position: absolute;
+        top : 1%;
+        left: 2%;
+        font-size: .8rem;
+    }
+
+    #detailProjet {
+        padding: 0 1rem;
+        margin-top: 2rem;
+        height: 250px;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+
+        }
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+
+        }
+    }
+
+    #navProjet {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+
+        .btnBack.bottom {
+            margin-right: 3rem;
+        }
+
+        .btnBack.nav {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        
     }
 
     .maxWidth {
         margin: 0 auto;
-        
     }
 }
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: $layout-breakpoint-m) {  
+  
+    #PageProjet {
+        .btnBack {                 
+            font-size: 1.2rem; 
+            padding: .8rem 1rem;
+        }
+        .btnBack.top {
+            position: absolute;
+            top : 5%;
+            left: 5%;
+            font-size: 1.2rem;
+        }
+    }
+  }
+   
+  /* Large devices (desktops, 1024px and up) */
+  @media (min-width: $layout-breakpoint-l) { 
+   
+  }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: $layout-breakpoint-xl) {
+     
+  }
+  

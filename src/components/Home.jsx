@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import VisibilitySensor from 'react-visibility-sensor';
 
-import {
-  Link,
-} from 'react-router-dom';
+// import {
+//   Link,
+// } from 'react-router-dom';
 
 
 // import { Link } from 'react-router-dom';
@@ -16,7 +16,6 @@ import Bio from './Bio';
 import Ligne from './Ligne';
 import Portfolio from './Portfolio';
 import Footer from './Footer';
-import Contact from './Contact';
 import ScrollToTop from './ScrollToTop';
 
 
@@ -34,8 +33,6 @@ function Home({ numProj, precImg, nextImg }) {
 
   return (
     <>
-      <Link to="/projet">projets</Link>
-
       <VisibilitySensor onChange={onchangeHandle} partialVisibility>
         <Header onWeatherChange={() => setIsRaining(!isRaining)} isRaining={isRaining} />
       </VisibilitySensor>
@@ -44,7 +41,6 @@ function Home({ numProj, precImg, nextImg }) {
       <Bio />
       <Portfolio numProj={numProj} precImg={precImg} nextImg={nextImg} />
       <Ligne />
-      <Contact />
       <Footer />
       {!isVisible && <ScrollToTop /> }
     </>

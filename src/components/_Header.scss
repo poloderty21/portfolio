@@ -28,6 +28,10 @@ header {
             border: 0;
             border-radius: 5px;
             padding: .5rem .5rem;
+            transition: 200ms;
+        }
+        input:hover {
+            color: lighten($color: $logoGrey, $amount: 5);          
         }
         span {
             color: $bgGrey;

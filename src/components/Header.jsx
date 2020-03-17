@@ -11,13 +11,15 @@ import {
 import './_Header.scss';
 
 import logo from '../media/logoWeb_blanc.png';
+import ContactModal from './ContactModal';
 
 function Header({ onWeatherChange, isRaining }) {
   return (
     <header id="header">
       <div id="divBtn" className="tilt-in-top-2">
         <span type="button" role="button" tabIndex={0} aria-label="Rainy" onClick={onWeatherChange}>{isRaining === true ? <FontAwesomeIcon icon={faCloudSunRain} /> : <FontAwesomeIcon icon={faCloudSun} />}</span>
-        <input type="button" value="Contact" />
+        <ContactModal />
+        {/* <input type="button" value="Contact" onClick={contactWindow} /> */}
       </div>
       <div className="">
         <img src={logo} alt="Logo XAintégration" id="logo" className="slide-in-blurred-top" />

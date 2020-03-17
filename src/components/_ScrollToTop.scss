@@ -10,10 +10,22 @@
   transition: 200ms;
   color: $logoGreen;
   user-select: none;
+  border-radius: 50%;
+
+  svg {
+    opacity: 0.8;
+
+    box-shadow: 0px 3px 6px 0px #212529;
+    border-radius: 50%;
+  }
 }
 
 #scrollToTop:hover {
   color: $logoGrey;
+
+  svg {
+    opacity: 1;
+  }
 }
 
 .slide-in-blurred-bottom {
