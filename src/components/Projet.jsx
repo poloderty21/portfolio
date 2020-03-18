@@ -31,8 +31,10 @@ function Projet({ numProj, precImg, nextImg }) {
         </div>
         <div id="navProjet">
           <Link to="/" className="btnBack bottom">Retour</Link>
-          <a id="divNavPrec" role="button" className="btnBack nav" onClick={precImg}><FontAwesomeIcon icon={faArrowCircleLeft} className="fleche" /></a>
-          <a id="divNavNext" role="button" className="btnBack nav" onClick={nextImg}><FontAwesomeIcon icon={faArrowCircleRight} className="fleche" /></a>
+          <button type="button" id="divNavPrec" className="btnBack nav" aria-label="Projet précédent" onClick={precImg}>
+            <FontAwesomeIcon icon={faArrowCircleLeft} className="fleche" />
+          </button>
+          <button type="button" id="divNavNext" className="btnBack nav" aria-label="Projet suivant" onClick={nextImg}><FontAwesomeIcon icon={faArrowCircleRight} className="fleche" /></button>
         </div>
       </div>
       <Footer />

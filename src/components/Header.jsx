@@ -26,7 +26,7 @@ function Header({ onWeatherChange, isRaining }) {
         <span><p className="slide">Parce que chaque détail compte</p></span>
       </div>
       <div id="divReseau" className="tilt-in-top-1">
-        <a href="https://www.facebook.com/xavier.alexandre.1994" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} /></a>
+        <a href="https://www.facebook.com/xavier.alexandre.dev" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} /></a>
         <a href="https://www.linkedin.com/in/xavier-alexandre-a735441a3/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
         <a href="https://github.com/poloderty21" aria-label="Github" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithubSquare} /></a>
       </div>

@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
+
 
 const Error = ({ touched, message }) => {
   if (!touched) {
@@ -8,6 +10,11 @@ const Error = ({ touched, message }) => {
     return <div className="form-message invalid">{message}</div>;
   }
   return <div className="form-message valid">&nbsp;</div>;
+};
+
+Error.propTypes = {
+  touched: PropTypes.bool.isRequired,
+  message: PropTypes.string.isRequired,
 };
 
 export default Error;

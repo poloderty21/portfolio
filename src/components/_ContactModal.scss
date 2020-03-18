@@ -2,13 +2,18 @@
 
 .modal-content {
     background-color: $bgGrey;
-    border: 1px solid $logoGreen;    
+    border: 1px solid $logoGreen; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 .modal-header, .modal-footer {
     border-color: $logoGreen;
     border: none;
     user-select: none;
+}
+
+.modal-title {
+    font-weight: 600;
 }
 
 .modal-body {
@@ -22,6 +27,7 @@
     color: $logoGreen;
     opacity: 1;
     font-size: 2.5rem;
+    text-shadow: none;
 }
 
 #sectionContact {
@@ -31,6 +37,7 @@
 
         .form-label {
             font-size: 1.2rem;
+            font-weight: 600;
             user-select: none;
         }
 
@@ -104,26 +111,12 @@ M E D I A  Q U E R I E S
 
 /* Small devices (landscape phones, 600px and up) */
 @media (min-width: $layout-breakpoint-s) {  
-    #sectionContact {
-        form {
-            // .formRow {
-            //     flex-direction: row;
-            // }
-        }
-    }
+    
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: $layout-breakpoint-m) {  
-    #sectionContact {
-        form {
-            
-            .btn {
-                border: none;
-                padding: .8rem 1rem; 
-            }
-        }
-    }
+   
 }
 
 /* Large devices (desktops, 1024px and up) */
