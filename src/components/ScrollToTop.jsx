@@ -10,6 +10,7 @@ import './_ScrollToTop.scss';
 const scrollToTop = () => {
   scroll.scrollToTop({
     smooth: 'easeInOutQuad',
+    duration: 800,
   });
 };
 

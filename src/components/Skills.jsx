@@ -1,4 +1,6 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 /* Languages */
 import html from '../media/skill-logo/HTML5.png';
@@ -190,42 +192,49 @@ function Skills() {
       <div id="skill-lang">
         {skills[0].map(({ name, pourcent, url }, id) => (
           <div key={name} className="skill">
-            <div className="skill-container">
-              <div className="skill-pourcent" style={{ backgroundImage: `linear-gradient(0deg, transparent 50%, #277b32 50%), linear-gradient(${getDegValue(pourcent)}deg, #277b32 50%, transparent 50%)` }}>
-                <div className="skill-logo">
-                  <img src={url} alt="" />
+            <ScrollAnimation animateIn="fade-in-top" animateOnce delay={id * 80 + 400} offset={50}>
+              <div className="skill-container">
+                <div className="skill-pourcent" style={{ backgroundImage: `linear-gradient(0deg, transparent 50%, #277b32 50%), linear-gradient(${getDegValue(pourcent)}deg, #277b32 50%, transparent 50%)` }}>
+                  <div className="skill-logo">
+                    <img src={url} alt="" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <span id={id} className="skill-title">{name}</span>
+              <span id={id} className="skill-title">{name}</span>
+            </ScrollAnimation>
           </div>
         ))}
       </div>
       <div id="skill-util">
         {skills[1].map(({ name, pourcent, url }, id) => (
           <div key={name} className="skill">
-            <div className="skill-container">
-              <div className="skill-pourcent" style={{ backgroundImage: `linear-gradient(0deg, transparent 50%, #277b32 50%), linear-gradient(${getDegValue(pourcent)}deg, #277b32 50%, transparent 50%)` }}>
-                <div className="skill-logo">
-                  <img src={url} alt="" />
+            <ScrollAnimation animateIn="fade-in-top" animateOnce delay={id * 80 + 400} offset={50}>
+              <div className="skill-container">
+                <div className="skill-pourcent" style={{ backgroundImage: `linear-gradient(0deg, transparent 50%, #277b32 50%), linear-gradient(${getDegValue(pourcent)}deg, #277b32 50%, transparent 50%)` }}>
+                  <div className="skill-logo">
+                    <img src={url} alt="" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <span id={id} className="skill-title">{name}</span>
+              <span id={id} className="skill-title">{name}</span>
+            </ScrollAnimation>
           </div>
         ))}
       </div>
       <div id="skill-util">
         {skills[2].map(({ name, pourcent, url }, id) => (
           <div key={name} className="skill">
-            <div className="skill-container">
-              <div className="skill-pourcent" style={{ backgroundImage: `linear-gradient(0deg, transparent 50%, #277b32 50%), linear-gradient(${getDegValue(pourcent)}deg, #277b32 50%, transparent 50%)` }}>
-                <div className="skill-logo">
-                  <img src={url} alt="" />
+            <ScrollAnimation animateIn="fade-in-top" animateOnce delay={id * 80 + 400} offset={50}>
+
+              <div className="skill-container">
+                <div className="skill-pourcent" style={{ backgroundImage: `linear-gradient(0deg, transparent 50%, #277b32 50%), linear-gradient(${getDegValue(pourcent)}deg, #277b32 50%, transparent 50%)` }}>
+                  <div className="skill-logo">
+                    <img src={url} alt="" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <span id={id} className="skill-title">{name}</span>
+              <span id={id} className="skill-title">{name}</span>
+            </ScrollAnimation>
           </div>
         ))}
       </div>
