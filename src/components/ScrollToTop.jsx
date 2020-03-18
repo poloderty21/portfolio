@@ -15,9 +15,9 @@ const scrollToTop = () => {
 
 function ScrollToTop() {
   return (
-    <div id="scrollToTop" onClick={scrollToTop} className="slide-in-blurred-bottom">
+    <button type="button" id="scrollToTop" onClick={scrollToTop} className="slide-in-blurred-bottom">
       <FontAwesomeIcon icon={faArrowCircleUp} />
-    </div>
+    </button>
   );
 }
 

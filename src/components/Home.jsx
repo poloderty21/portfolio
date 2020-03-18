@@ -3,13 +3,6 @@ import PropTypes from 'prop-types';
 
 import VisibilitySensor from 'react-visibility-sensor';
 
-// import {
-//   Link,
-// } from 'react-router-dom';
-
-
-// import { Link } from 'react-router-dom';
-
 import Header from './Header';
 import Rainy from './Rainy';
 import Bio from './Bio';
@@ -26,9 +19,8 @@ function Home({ numProj, precImg, nextImg }) {
   const [isVisible, setIsVisible] = useState(true);
 
 
-  const onchangeHandle = (isVisible) => {
-    // console.log(isVisible);
-    setIsVisible(isVisible);
+  const onchangeHandle = (visible) => {
+    setIsVisible(visible);
   };
 
   return (
