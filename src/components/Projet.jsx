@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import ImageGallery from 'react-image-gallery';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
-import Projets from '../data/projets';
 import Footer from './Footer';
 
+import Projets from '../data/projets';
 
 import './_Projet.scss';
 
@@ -15,7 +16,7 @@ function Projet({ numProj, precImg, nextImg }) {
   return (
     <>
       <div id="PageProjet">
-        <div>
+        <div className="divImgPrin">
           <img src={projet.image} alt="" />
         </div>
 
@@ -28,6 +29,12 @@ function Projet({ numProj, precImg, nextImg }) {
           </h3>
           <h4>{projet.sousTitre}</h4>
           <p>{projet.desc}</p>
+          { 'autresImage' in projet
+          && (
+          <div className="divGalerie">
+            <ImageGallery items={projet.autresImage} lazySLoad autoPlay slideInterval={5000} showIndex slideOnThumbnailOver />
+          </div>
+          )}
         </div>
         <div id="navProjet">
           <Link to="/" className="btnBack bottom">Retour</Link>

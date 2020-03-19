@@ -29,6 +29,10 @@
             font-size: 2rem;
             padding: 0 .5rem;
             color: $logoGrey;
+            transition: 200ms;
+        }
+        a:hover {
+            color: $logoGreen;
         }
     }
 

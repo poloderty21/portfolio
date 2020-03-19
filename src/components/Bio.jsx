@@ -29,9 +29,9 @@ function Bio() {
           <ScrollAnimation animateIn="fade-in-top" animateOnce delay={500} offset={200}>
             <div id="div-chapeau">
               <img src={barbueVert} alt="Barbue sur rond au fond vert" />
-              <img src={fedora} alt="fedora" className="chapeau" />
+              {/* <img src={fedora} alt="fedora" className="chapeau" />
               <img src={cigar} alt="cigar" className="chapeau" />
-              <img src={incognito} alt="incognito" className="chapeau" />
+              <img src={incognito} alt="incognito" className="chapeau" /> */}
             </div>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fade-in-top" animateOnce>

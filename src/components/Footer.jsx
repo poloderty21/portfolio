@@ -7,6 +7,8 @@ import {
 import ScrollAnimation from 'react-animate-on-scroll';
 import { animateScroll as scroll } from 'react-scroll';
 
+import dependencies from '../data/dependencies';
+
 import './_Footer.scss';
 
 function Footer() {
@@ -39,54 +41,12 @@ function Footer() {
           <ScrollAnimation animateIn="fade-in-bottom" offset={0}>
             <div id="foldList">
               <ul>
-                <li>
-                  <span>react: </span>
-                  <span>^16.12.0</span>
-                </li>
-                <li>
-                  <span>react-dom: </span>
-                  <span>^16.12.0</span>
-                </li>
-                <li>
-                  <span>react-router-dom: </span>
-                  <span>^5.1.2</span>
-                </li>
-                <li>
-                  <span>react-scripts: </span>
-                  <span>3.3.0</span>
-                </li>
-                <li>
-                  <span>yup: </span>
-                  <span>^0.28.3</span>
-                </li>
-                <li>
-                  <span>formik: </span>
-                  <span>^2.1.4</span>
-                </li>
-                <li>
-                  <span>emailjs-com: </span>
-                  <span>^2.4.1</span>
-                </li>
-                <li>
-                  <span>node-sass: </span>
-                  <span>^4.13.1</span>
-                </li>
-                <li>
-                  <span>prop-types: </span>
-                  <span>^15.7.2</span>
-                </li>
-                <li>
-                  <span>@fortawesome/react-fontawesome: </span>
-                  <span>^0.1.8</span>
-                </li>
-                <li>
-                  <span>@fortawesome/fontawesome-svg-core: </span>
-                  <span>^1.2.27</span>
-                </li>
-                <li>
-                  <span>@fortawesome/free-solid-svg-icons: </span>
-                  <span>^5.12.1</span>
-                </li>
+                {dependencies.map(({ name, version }) => (
+                  <li>
+                    <span>{`${name} : `}</span>
+                    <span>{version}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </ScrollAnimation>
