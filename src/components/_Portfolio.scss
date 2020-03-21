@@ -34,6 +34,8 @@
     #carroussel {  
         margin-top: 2rem;
         position: relative;
+        box-shadow: 0px 7px 28px -10px rgba(0,0,0,0.75);
+
 
         #divNavNext {         
             left: 50%;
@@ -46,7 +48,7 @@
 
         .btnNavSlider {
             transition: opacity 800s;
-            padding: 1rem;
+            padding: 0 1rem;
             opacity: .1;
             position: absolute;
             z-index: 5;
@@ -70,6 +72,7 @@
             max-width: 100%;
             user-select: none;
             
+            
             div {
                 transition: transform 400ms ease-in-out;
             }
@@ -87,7 +90,7 @@
         #barreInfo {
             width: 100%;
             padding: .5rem .5rem;      
-            background-color: rgba($color: lighten($color: $bgGrey, $amount: 10), $alpha: .9);           
+            background-color: rgba($color: lighten($color: $bgGrey, $amount: 10), $alpha: 1);           
             z-index: 10;
            
             #divTitre {
@@ -207,7 +210,7 @@ M E D I A  Q U E R I E S
 
         #carroussel {
             .btnNavSlider {
-                padding: 2rem;
+                padding: 0 2rem;
 
                 .fleche {
                     margin-top: 0%;

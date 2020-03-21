@@ -61,6 +61,7 @@ $grosseurPourcentHoverXl: calc(#{$grosseurCercleHoverXl} + 25px);
             @extend .totalCenter;
             // height: $grosseurPourcentHoverXs;
             .skill-pourcent {
+                box-shadow: 0px 7px 28px -10px rgba(0,0,0,0.75);
                 @extend .totalCenter;
                 width: $grosseurPourcentXs;
                 height: $grosseurPourcentXs;

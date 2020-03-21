@@ -42,7 +42,7 @@ function Footer() {
             <div id="foldList">
               <ul>
                 {dependencies.map(({ name, version }) => (
-                  <li>
+                  <li key={name}>
                     <span>{`${name} : `}</span>
                     <span>{version}</span>
                   </li>

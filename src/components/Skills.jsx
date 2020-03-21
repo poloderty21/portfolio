@@ -15,7 +15,7 @@ function Skills() {
       <div id="skill-lang">
         {skills[0].map(({ name, pourcent, url }, id) => (
           <div key={name} className="skill">
-            <ScrollAnimation animateIn="fade-in-top" animateOnce delay={id * 80 + 400} offset={50}>
+            <ScrollAnimation animateIn="fade-in-top" animateOnce delay={id * 60 + 400} offset={50}>
               <div className="skill-container">
                 <div className="skill-pourcent" style={{ backgroundImage: `linear-gradient(0deg, transparent 50%, #277b32 50%), linear-gradient(${getDegValue(pourcent)}deg, #277b32 50%, transparent 50%)` }}>
                   <div className="skill-logo">
@@ -31,7 +31,7 @@ function Skills() {
       <div id="skill-util">
         {skills[1].map(({ name, pourcent, url }, id) => (
           <div key={name} className="skill">
-            <ScrollAnimation animateIn="fade-in-top" animateOnce delay={id * 80 + 400} offset={50}>
+            <ScrollAnimation animateIn="fade-in-top" animateOnce delay={id * 60 + 400} offset={50}>
               <div className="skill-container">
                 <div className="skill-pourcent" style={{ backgroundImage: `linear-gradient(0deg, transparent 50%, #277b32 50%), linear-gradient(${getDegValue(pourcent)}deg, #277b32 50%, transparent 50%)` }}>
                   <div className="skill-logo">
@@ -47,7 +47,7 @@ function Skills() {
       <div id="skill-util">
         {skills[2].map(({ name, pourcent, url }, id) => (
           <div key={name} className="skill">
-            <ScrollAnimation animateIn="fade-in-top" animateOnce delay={id * 80 + 400} offset={50}>
+            <ScrollAnimation animateIn="fade-in-top" animateOnce delay={id * 60 + 400} offset={50}>
 
               <div className="skill-container">
                 <div className="skill-pourcent" style={{ backgroundImage: `linear-gradient(0deg, transparent 50%, #277b32 50%), linear-gradient(${getDegValue(pourcent)}deg, #277b32 50%, transparent 50%)` }}>

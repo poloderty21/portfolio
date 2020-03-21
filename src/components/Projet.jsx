@@ -17,25 +17,16 @@ function Projet({ numProj, precImg, nextImg }) {
     <>
       <div id="PageProjet">
         <div className="divImgPrin">
-          <img src={projet.image} alt="" />
-        </div>
-
-        <Link to="/" className="btnBack top">Retour</Link>
-
-        <div id="detailProjet" className="maxWidth">
-          <h3>
-            Bonjour, voici le projet
-            {numProj + 1}
-          </h3>
-          <h4>{projet.sousTitre}</h4>
-          <p>{projet.desc}</p>
-          { 'autresImage' in projet
-          && (
-          <div className="divGalerie">
-            <ImageGallery items={projet.autresImage} lazySLoad autoPlay slideInterval={5000} showIndex slideOnThumbnailOver />
-          </div>
+          {'image' in projet && !('video' in projet) && <img src={projet.image} alt="" />}
+          {'video' in projet && (
+          <video autoPlay controls muted>
+            <source src={projet.video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           )}
         </div>
+
+        {/* <Link to="/" className="btnBack top">Retour</Link> */}
         <div id="navProjet">
           <Link to="/" className="btnBack bottom">Retour</Link>
           <button type="button" id="divNavPrec" className="btnBack nav" aria-label="Projet précédent" onClick={precImg}>
@@ -43,6 +34,27 @@ function Projet({ numProj, precImg, nextImg }) {
           </button>
           <button type="button" id="divNavNext" className="btnBack nav" aria-label="Projet suivant" onClick={nextImg}><FontAwesomeIcon icon={faArrowCircleRight} className="fleche" /></button>
         </div>
+        <div id="detailProjet" className="maxWidth">
+          <h3>
+            {projet.titre}
+          </h3>
+          <h4>{projet.sousTitre}</h4>
+          <p>{projet.desc}</p>
+          { 'autresImage' in projet
+          && (
+          <div className="divGalerie">
+            <ImageGallery
+              items={projet.autresImage}
+              lazySLoad
+              autoPlay
+              slideInterval={5000}
+              showIndex
+              slideOnThumbnailOver
+            />
+          </div>
+          )}
+        </div>
+
       </div>
       <Footer />
     </>

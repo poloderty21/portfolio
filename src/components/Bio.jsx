@@ -6,9 +6,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Skills from './Skills';
 
 import barbueVert from '../media/Barbue-vert-chapeau.png';
-import fedora from '../media/chapeau/chapeau-fedora.png';
-import cigar from '../media/chapeau/chapeau-cigar.png';
-import incognito from '../media/chapeau/chapeau-incognito.png';
+// import fedora from '../media/chapeau/chapeau-fedora.png';
+// import cigar from '../media/chapeau/chapeau-cigar.png';
+// import incognito from '../media/chapeau/chapeau-incognito.png';
 
 import './_Bio.scss';
 
