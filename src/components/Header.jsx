@@ -23,7 +23,10 @@ function Header({ onWeatherChange, isRaining }) {
       </div>
       <div className="">
         <img src={logo} alt="Logo XAintégration" id="logo" className="slide-in-blurred-top" />
-        <span><p className="slide">Parce que chaque détail compte</p></span>
+        <span>
+          <p className="slide">Parce que chaque détail compte</p>
+          <h1 id="h1cacher">Xavier Alexandre - Integration web - Développeur Front-End - Portfolio</h1>
+        </span>
       </div>
       <div id="divReseau" className="tilt-in-top-1">
         <a href="https://www.facebook.com/xavier.alexandre.dev" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} /></a>

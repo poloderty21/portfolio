@@ -90,7 +90,6 @@ $grosseurPourcentHoverXl: calc(#{$grosseurCercleHoverXl} + 25px);
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             font-size: .9rem;
-            // margin-top: 1rem;
             opacity: 0;
             transition: ease-in-out 400ms;
         }
@@ -120,11 +119,6 @@ $grosseurPourcentHoverXl: calc(#{$grosseurCercleHoverXl} + 25px);
 M E D I A  Q U E R I E S
 ####################################################
 */
- 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: $layout-breakpoint-s) {  
-    
-}
  
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: $layout-breakpoint-m) {  
@@ -197,10 +191,5 @@ M E D I A  Q U E R I E S
             }    
         }
     }   
-    
-}
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: $layout-breakpoint-xl) {
     
 }

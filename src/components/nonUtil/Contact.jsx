@@ -41,7 +41,7 @@ class Contact extends React.Component {
       <div id="sectionContact" className="mainDiv">
         <div className="content" id="contact">
           <div id="contentContact">
-            <h1>Contact</h1>
+            <h2>Contact</h2>
 
             <Formik
               initialValues={{

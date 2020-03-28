@@ -93,7 +93,7 @@
             background-color: rgba($color: lighten($color: $bgGrey, $amount: 10), $alpha: 1);           
             z-index: 10;
            
-            #divTitre {
+            #divTitreInfo {
                 // color: lighten($color: $logoGrey, $amount: 10);
                 text-align: left;
                 padding: 0;
@@ -220,7 +220,7 @@ M E D I A  Q U E R I E S
             }
             #barreInfo {                     
                 padding: .5rem 1rem;
-                #divTitre {    
+                #divTitreInfo {    
                     h2 {
                         font-size: 2rem;
 

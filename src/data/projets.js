@@ -55,7 +55,7 @@ export default [
   {
     titre: 'Maison de jeune de Saint-Léonard',
     sousTitre: 'Projet de refonte de leur site web',
-    desc: "ut the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionar",
+    desc: "La refonte du site de la maison de jeune de Saint-Léonard était un projet d'équipe réalisé dans le cadre de notre cours de production web. Ce projet a été très formateur puisqu'il représentait notre tout premier projet mené de manière totalement autonome (auto-géré avec la méthode AGILE). Ce fut un défi autant du point de vue de l'intégration avec les clients que du point de vue du travail en équipe. Il a fallu travailler fort et réussir à se concerter de façon efficace afin de respecter les délais prescrit par le cours. Sommes toutes, il s'agit d'un projet dont je suis fier puisqu'il représente un défi de taille que nous avons su relever avec brio.",
     image: mdjAccueil,
     autresImage: [
       {
@@ -96,7 +96,7 @@ export default [
   {
     titre: 'Projets du CCDMD',
     sousTitre: "Contrats d'intégration de site web pour le CCDMD",
-    desc: "ut the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionar",
+    desc: "Le CCDMD est un centre de production de ressources numériques et de documents imprimés conçus à l'intention du personnel enseignant et des étudiants de l'ensemble du réseau collégial du Québec. Aimant beaucoup la dimension éducative du centre, j'ai proposé mes services de façon spontané au responsable de projet. J'oeuvre donc à contrat pour le CCDMD pour réaliser l'intégration de divers sites web depuis 2019. Vous pouvez voir ci-dessous quelques projets que j'ai réalisés.",
     image: ccdmdTrousse,
     autresImage: [
       {
@@ -145,7 +145,7 @@ export default [
   {
     titre: 'Burrito Libre - Site Web',
     sousTitre: "Projet de création d'un site web pour le jeu Burrito Libre",
-    desc: "ut the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionar",
+    desc: "Burrito Libre est une vieille idée que j'ai eue lors de la première année en technique d'intégration multimédia durant mon cours de scénarisation. Cette idée a grandi avec moi tout au cours de ma formation et a pris plusieurs formes. Au début il ne s'agissait que d'une affiche d'un jeu fictif. Ce qui n'était qu'une idée fictive est finalement devenu réalité en 2019 lorsque j'ai réalisé le jeu en 2D dans Untiy avec mon équipe (Jumbotron). Le jeu fut un fier succès auprès de mes pairs lors de l'Arcade TIM au Collège de Maisonneuve. L'un des critères du projet était de créer un site qui présenterait le jeu et proposerait d'y jouer.",
     image: burrito,
     autresImage: [
       {
@@ -166,7 +166,7 @@ export default [
   {
     titre: 'Sacrifié',
     sousTitre: "Trailer d'un film de type suspense/horreur",
-    desc: "ut the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionar",
+    desc: "Conception et réalisation d’une bande-annonce pour un film fictif en français. Nous avons choisi de créer la bande-annonce d'un film de type triller/horreur. Nous avons tout d'abord créér un scénarimage afin de se donner une idée de ce dont on voulait que les plans ressemblent et nous sommes partis filmer au parc de l'ile de la visitation à Montréal.",
     image: sacrifie1,
     video: sacrifie,
     autresImage: [

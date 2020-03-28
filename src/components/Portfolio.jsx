@@ -56,13 +56,13 @@ function Portfolio({ numProj, precImg, nextImg }) {
           </Row>
 
           <Row id="barreInfo">
-            <Col id="divTitre" xs="10" sm="10">
+            <Col id="divTitreInfo" xs="10" sm="10">
               <h2>{Projets[numProj].titre}</h2>
               <p>{Projets[numProj].sousTitre}</p>
             </Col>
 
             <Col id="divBouton" xs="2" sm="2">
-              <Link to="/projet" className="button">
+              <Link to="/projet" className="button" aria-label="Visiter la page projet">
                 <span className="d-none d-sm-block">Visiter</span>
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="marg" />
               </Link>

@@ -23,12 +23,12 @@ function Skills() {
                   </div>
                 </div>
               </div>
-              <span id={id} className="skill-title">{name}</span>
+              <span className="skill-title">{name}</span>
             </ScrollAnimation>
           </div>
         ))}
       </div>
-      <div id="skill-util">
+      <div id="skill-logiciel">
         {skills[1].map(({ name, pourcent, url }, id) => (
           <div key={name} className="skill">
             <ScrollAnimation animateIn="fade-in-top" animateOnce delay={id * 60 + 400} offset={50}>
@@ -39,7 +39,7 @@ function Skills() {
                   </div>
                 </div>
               </div>
-              <span id={id} className="skill-title">{name}</span>
+              <span className="skill-title">{name}</span>
             </ScrollAnimation>
           </div>
         ))}
@@ -56,7 +56,7 @@ function Skills() {
                   </div>
                 </div>
               </div>
-              <span id={id} className="skill-title">{name}</span>
+              <span className="skill-title">{name}</span>
             </ScrollAnimation>
           </div>
         ))}

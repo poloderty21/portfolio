@@ -62,9 +62,13 @@ function Projet({ numProj, precImg, nextImg }) {
 }
 
 Projet.propTypes = {
-  numProj: PropTypes.number.isRequired,
+  numProj: PropTypes.number,
   precImg: PropTypes.func.isRequired,
   nextImg: PropTypes.func.isRequired,
+};
+
+Projet.defaultProps = {
+  numProj: 1,
 };
 
 export default Projet;
