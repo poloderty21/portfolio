@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Cloner le projet dans un dossier local avec cette procedure: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
 
-# Une fois le cloner il vous faut les npm modules:
+# Une fois le projet prêt il vous faut les npm modules:
 ## Vous devez faire 'npm install' pour installer les modules avant tout!
 
 ## Ensuite 'npm start' pour partir le projet localement!
